@@ -7,5 +7,13 @@ cask "subbar" do
   desc "Universal macOS menu-bar app to track Opencode Go and Minimax usage"
   homepage "https://github.com/MarcoLeongDev/subbar"
   app "SubBar.app"
-  caveats "SubBar is a menu-bar app. After install, look for its icon at the top-right of your screen."
+
+  # SubBar is not Apple-notarized yet, and Homebrew 6 quarantines all cask
+  # downloads unconditionally. Strip the quarantine post-install so the app
+  # launches without a Gatekeeper prompt. (Personal tap only — the official
+  # homebrew/cask tap forbids this stanza pattern.)
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/SubBar.app"]
+  end
 end

@@ -12,6 +12,7 @@ Personal Homebrew tap for:
 
 ```bash
 brew tap MarcoLeongDev/tap
+brew trust MarcoLeongDev/tap
 brew install --cask harness-launcher
 ```
 

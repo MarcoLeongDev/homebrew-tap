@@ -2,7 +2,7 @@ cask "harness-launcher" do
   version "0.1.76"
   sha256 "6b5ee518ee05b94d67ad9cf5ca744552a0b7494a99ab5dbae898e73414b4121c"
 
-  url "https://cdn.jsdelivr.net/gh/MarcoLeongDev/homebrew-tap@v#{version}/dist/Harness-Launcher_#{version}_universal.dmg"
+  url "https://github.com/MarcoLeongDev/harness-launcher/releases/download/v#{version}/Harness-Launcher_#{version}_universal.dmg"
   name "Harness Launcher"
   desc "Universal macOS menu-bar app to install, version and run the DeepSeek Harness engine"
   homepage "https://github.com/MarcoLeongDev/harness-launcher"

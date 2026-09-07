@@ -1,6 +1,6 @@
 cask "harness-launcher" do
   version "0.1.87"
-  sha256 "2515d2fdf43a4787086b96f914f6d96984b46bed62d8388e04e5e61eb08ba538"
+  sha256 "5090962921e00d9e59e5eed617642ed116ff3f2d6d07d342dade2dcbd876bf99"
 
   url "https://github.com/MarcoLeongDev/harness-launcher/releases/download/v#{version}/Harness-Launcher_#{version}_universal.dmg"
   name "Harness Launcher"

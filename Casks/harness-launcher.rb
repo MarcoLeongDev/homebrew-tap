@@ -13,8 +13,7 @@ cask "harness-launcher" do
   # cask downloads unconditionally. Strip the quarantine post-install so the
   # app launches without a Gatekeeper prompt. (Personal tap only — the
   # official homebrew/cask tap forbids this stanza pattern.)
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Harness Launcher.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Harness Launcher.app"]
   end
 end

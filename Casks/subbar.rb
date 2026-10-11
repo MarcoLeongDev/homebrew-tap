@@ -1,6 +1,6 @@
 cask "subbar" do
-  version "1.0.37"
-  sha256 "74be237c2771586367a9cdeafdf0e481ab6ca64cc2c3ceb474ab4a9401a8127f"
+  version "1.0.42"
+  sha256 "9375f0d18aaa0e597e1a03c859c37431254cf2febdaa67c95906a41fa5dac474"
 
   url "https://cdn.jsdelivr.net/gh/MarcoLeongDev/homebrew-tap@v#{version}/dist/SubBar_#{version}_universal.dmg"
   name "SubBar"
